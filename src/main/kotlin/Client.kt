@@ -32,8 +32,7 @@ val client = HttpClient(CIO) {
 suspend fun main() {
     coroutineScope {
         launch {
-            val text = client.get("https://adventofcode.com/2021/day/4/input").bodyAsText()
-            println(text)
+            Day1.getAnswerPartTwo()
         }
     }
 }
